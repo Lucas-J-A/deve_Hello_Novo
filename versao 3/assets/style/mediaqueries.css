@@ -10,12 +10,10 @@
 			background-size: cover;
 
 		}
-
 		.card__header,
 		.card__header__portabilidade {
 			display: none;
 		}
-
 
 		.text-principal {
 
@@ -23,62 +21,10 @@
 			text-align: center;
 		}
 
-		.section__filmes {
-			margin-top: 800px;
-		}
 
-		.img-planos {
-			width: 400px;
-			height: auto;
-			margin: auto;
-			display: block;
-		}
-
-		.container__card--beneficio {
-			margin-top: 40vh;
-		}
-
-		.swiper {
-			width: 700px !important;
-		}
 	}
 
-	@media only screen and (min-width: 600px) {
-
-
-		.text-principal {
-			font-size: 3rem;
-		}
-
-		.img-mao {
-			width: 85%;
-			margin-left: 10vw;
-		}
-
-
-
-		.card-plan-nacional {
-			width: 80%;
-
-		}
-
-		.socialFixed {
-			position: fixed;
-			bottom: 120px;
-			right: 0;
-			border-radius: 50%;
-			box-sizing: border-box;
-
-		}
-
-		.container__card--beneficio {
-			margin-top: 30vh;
-		}
-
-		.section__filmes {
-			margin-top: 120vh;
-		}
-	}
+	@media only screen and (min-width: 600px) {}
 
 	/* Medium devices (landscape tablets, 768px and up) */
 	@media only screen and (min-width: 768px) {
@@ -87,28 +33,9 @@
 		.card__header__portabilidade {
 			display: block;
 		}
-
-		.card-plan-nacional {
-			width: 40%;
-
-		}
-
-		.card-plan-nacional-cel {
-			display: block;
-		}
-
 		[data-aos-delay] {
 			transition-delay: 0 !important;
 		}
-
-		.section__filmes {
-			margin-top: 140vh;
-		}
-
-		.container__card--beneficio {
-			margin-top: 25vh;
-		}
-
 
 	}
 
@@ -124,41 +51,11 @@
 			font-size: 4rem;
 		}
 
-		.img-mao {
-			width: 100%;
-			margin-left: 0;
-		}
-
-
-
-		.card-plan-nacional {
-			width: 20%;
-
-		}
-
-		.card-plan-nacional-cel {
-			display: none;
-		}
-
-		.card-plan-nacional-desktop {
-			display: block;
-		}
-
-		.container__card--beneficio {
-			margin-top: 15vh;
-		}
 
 		.section-title p {
 			width: 50%;
 		}
 
-		.section__filmes {
-			margin-top: 40vh;
-		}
-
-		.img-planos {
-			width: 800px;
-		}
 
 		#footer {
 			padding: 20px 15px;
@@ -215,90 +112,11 @@
 			font-size: 6rem;
 		}
 
-		.img-mao {
-			width: 80%;
-
-
-		}
-
-
-		.btn-headerVerplanos {
-			align-self: center;
-			width: 25vw;
-
-
-		}
-
-
-		#mais1 {
-			display: none;
-		}
-
-		#mais2 {
-			display: none;
-		}
-
-		#mais3 {
-			display: none;
-		}
-
-
-	}
-
-	@media only screen and (min-width: 1350px) {
-		.header-master {
-
-			background-position: center;
-
-		}
-
-		.img-mao {
-			width: 90%;
-			margin-bottom: 0;
-
-
-		}
-
-		.max-mao {
-			left: 370px;
-			top: 200px;
-			width: 12vw;
-		}
-
-		.watch-mao {
-			width: 10vw;
-			left: 150px;
-			top: 50px;
-			max-width: 1500px;
-		}
 
 
 
 	}
 
-	@media only screen and (min-width: 1450px) {
+	@media only screen and (min-width: 1350px) {}
 
-
-		.img-mao {
-			width: 90%;
-			margin-bottom: 0;
-
-
-		}
-
-		.max-mao {
-			left: 370px;
-			top: 200px;
-			width: 10 vw;
-		}
-
-		.watch-mao {
-			width: 10vw;
-			left: 150px;
-			top: 50px;
-			max-width: 1500px;
-		}
-
-
-
-	}
+	@media only screen and (min-width: 1450px) {}

@@ -1,10 +1,4 @@
-/**
-* Template Name: BizLand
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 // Inicialização do Swiper
 var mySwiper = new Swiper('.mySwiper', {
   // Parâmetros do Swiper
@@ -20,6 +14,44 @@ var mySwiper = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+
+// Inicialização do Swiper
+var mySwiper = new Swiper('.SwiperPlanos', {
+  // Parâmetros do Swiper
+  centeredSlidesBounds: true,
+  slidesPerView: 4, // Número de slides por visualização
+  spaceBetween: 10, // Espaço entre os slides
+  loop: false, // Ativa o loop de slides
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+
+// Função para determinar o número de slides por visualização com base na largura da tela
+function getSlidesPerView() {
+  if (window.matchMedia("(min-width: 1200px)").matches) {
+    return 4; // telas col-xl
+  } else if (window.matchMedia("(min-width: 992px)").matches) {
+    return 3; // telas col-lg
+  } else if (window.matchMedia("(min-width: 768px)").matches) {
+    return 3; // telas col-md
+  } else if (window.matchMedia("(min-width: 576px)").matches) {
+    return 3; // telas col-sm
+  } else {
+    return 2; // telas menores que col-sm
+  }
+}
+
+// Adicionar um listener para mudanças de tamanho da janela
+window.addEventListener('resize', function () {
+  // Atualizar o número de slides por visualização quando a tela for redimensionada
+  mySwiper.params.slidesPerView = getSlidesPerView();
+  mySwiper.update(); // Atualizar o swiper
+});
+
 
 (function () {
   "use strict";
@@ -298,9 +330,5 @@ var mySwiper = new Swiper('.mySwiper', {
     })
   });
 
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
 
 })()

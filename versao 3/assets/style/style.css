@@ -28,7 +28,7 @@
 # General
 --------------------------------------------------------------*/
 
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 	body {
 		font-family: "`Poppins", sans-serif;
@@ -490,6 +490,15 @@
 		background-size: cover;
 	}
 
+	.header-master_form {
+		width: 100%;
+		height: 400px;
+		background: url("../../img/banner-hero.webp");
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	.header-principal-parent {
 
 		color: var(--color-white);
@@ -501,6 +510,22 @@
 		font-size: 4rem;
 	}
 
+	/*Section beneficios*/
+	.section__beneficios {
+
+
+		margin-bottom: 100px;
+
+	}
+
+	.section__beneficios div {
+		height: 100%;
+	}
+
+	.card-title {
+		font-size: 25px;
+		font-weight: 700;
+	}
 
 	/*Card- Header*/
 	.card--beneficio--plano {
@@ -536,17 +561,20 @@
 		text-align: justify;
 	}
 
-	/*----------------Seção filme ----------*/
+
 	/* section filmes */
 	.section__filmes {
-		margin-top: 200px;
-
+		margin-top: 10vh;
 	}
+
+
+
+	/*----------------Seção filme ----------*/
 
 	.container__filmes {
 		overflow: hidden;
-		border-radius: 15px;
-		padding: 50px;
+
+		padding: 20px;
 		color: white;
 		background-image: url("../../img/bg-filmes.jpg");
 		background-size: cover;
@@ -579,7 +607,6 @@
 	}
 
 	#filmes .swiper-slide {
-		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
@@ -604,53 +631,163 @@
 		/* Aumenta a intensidade da sombra */
 	}
 
-
-
-
-
-
-
-	
-
 	.card__beneficios__Second img {
 		width: 5rem;
 	}
 
+	.filmes-img {
+		width: 90%;
+		background-position: center;
+	}
 
 	/*Section Hello controle*/
 	.img-planos {
-		width: 700px;
+		width: 100% !important;
 		height: auto;
 	}
 
-	/*Section Planos Nacionais*/
-	.card-plan {
-		box-sizing: border-box;
-		border-radius: var(--br-10xl);
-		background-color: var(--color-whitesmoke);
-		box-shadow: var(--sombra-plano);
-		overflow: hidden;
+
+
+	/**/
+	.card--img--portabilidade {
+		background-color: var(--color-orangered-100);
+	}
+
+	.card--img--canaiswatch,
+	.card--img--portabilidade {
+		border-radius: 25px;
+	}
+
+
+	/*secção imagens*/
+	.hellosection_pic img {
+		width: 100vw;
+		height: auto;
+	}
+
+	/*QUEM É A HELLO CARDS*/
+
+	.card-body-beneficio {
+		justify-content: center;
+		flex: 370px;
+		padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+		color: var(--bs-card-color);
+	}
+
+	.card-beneficio-hello img {
+		max-width: 150px;
+	}
+
+	.card-beneficio-hello .max-hbo {
+		width: 80px;
+	}
+
+	.card-beneficio-hello .card-body {
+		margin: 0 3%;
+	}
+
+	.card-beneficio-hello h4 {
+		font-weight: 700;
+		font-size: 24px;
+	}
+
+	.card-beneficio-hello p {
+		font-size: 16px;
+	}
+
+	.card-beneficio-hello p span {
+		font-size: 18px;
+		color: #360063;
+		font-weight: 700;
+	}
+
+	/*Section Hello controle*/
+
+
+	.hello-controle {
+		padding: 15px 0;
+	}
+
+	.hello-controle>p>span {
 		font-weight: 400;
+		color: #FFA64D;
+		letter-spacing: 5px;
+	}
+
+	.hello-controle h2 {
+		font-size: 32px;
+		font-weight: 700;
+	}
+
+	.hello-controle p {
+		font-size: 18px;
+	}
+
+
+	/*Section Planos Nacionais*/
+	#planos .swiper {
+		width: 100%;
+		height: 100%;
+
+	}
+
+	#planos .swiper-slide {
+
+
+		width: 100%;
+		/* Define a largura do slide */
+		height: auto;
+
+		/* Ajusta a altura conforme o conteúdo */
+	}
+
+	#planos .swiper-slide:hover {
+		transform: scale(0.98);
+
+
+
+		/* Aumenta o tamanho em 5% */
+	}
+
+	.escolher-plano h3 {
+		font-size: 21px;
+		font-weight: 600;
+		color: #460d00;
 	}
 
 	.card-plan-nacional {
 		box-sizing: border-box;
-		border: solid 3px rgba(231, 154, 0, 1);
-		border-radius: 25px;
+		border: solid 1.5px rgba(231, 154, 0, 1);
+		border-radius: 15px;
 		overflow: hidden;
+		box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	}
+
+	.plano-1 .gb-plano {
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+		font-size: 51px;
 	}
 
 	.text-plan {
-		font-size: var(--font-size-25xl);
+		padding-bottom: 0;
+		margin-bottom: -5px;
+		font-size: 15px;
+		font-style: italic;
 	}
 
 	.text-legend {
-		font-size: var(--font-size-3xs);
+		font-size: 0.7rem;
 	}
 
 	.text-benef p {
 		margin-top: -15px;
 		font-size: var(--font-size-base);
+	}
+
+	.plano-1 .bonus-dados {
+		font-size: 14px;
 	}
 
 	.text-indigo {
@@ -663,23 +800,94 @@
 	}
 
 	.plan__nacional--max img {
-		margin-top: 6px;
-		background-position: right;
-		width: 5rem;
+
+		max-width: 120px;
 		height: auto;
 
 	}
 
 	.preco {
 		font-size: var(--font-size-9xl);
+		margin: 0;
+		padding: 0;
 	}
 
+	/* Estilização do Modal */
+	.modal-content {
+		border-radius: 15px;
+		/* Borda arredondada */
+	}
+
+	.modal-header {
+		background-color: #fff;
+		/* Cor de fundo do cabeçalho */
+		border-bottom: 1px solid #f1f1f1;
+		/* Linha de separação */
+	}
+
+	.modal-title {
+		color: #000000;
+		/* Cor do título */
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.modal-body {
+		padding: 20px;
+		/* Espaçamento interno */
+	}
+
+	.modal-footer {
+		background-color: #f8f9fa;
+		/* Cor de fundo do rodapé */
+		border-top: 1px solid #dee2e6;
+		/* Linha de separação */
+	}
+
+	/* Botões do Modal */
+	.btn-primary {
+		background-color: #e23d19;
+		/* Cor de fundo para botão primário */
+		border-color: #e23d19;
+		/* Cor da borda para botão primário */
+	}
+
+	.btn-secondary {
+		background-color: #360063;
+		/* Cor de fundo para botão secundário */
+		border-color: #360063;
+		/* Cor da borda para botão secundário */
+	}
+
+
+
 	.planos__nacional--part2 {
-		background-color: var(--color-whitesmoke);
+		background-color: #f1f1f1;
+	}
+
+	.planos__nacional--part2 p {
+		font-size: 13px;
+		font-weight: 400;
+	}
+
+	.planos__nacional--part2 .canais {
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	.bi-telephone,
+	.bi-send,
+	.bi-reception-4 {
+		margin-right: 5px;
+	}
+
+	.bi-info-circle {
+		font-size: 12px;
 	}
 
 	.border-bottom--oranged {
 		border-bottom: solid 1px orangered;
+
 	}
 
 	.benef-plan-text {
@@ -692,14 +900,15 @@
 	}
 
 	.logoWatch-plan {
-		width: 170px;
 		height: auto;
-		max-width: 300px;
+		max-width: 180px;
+
+
 	}
 
 	.icon_canais img {
-		width: 30px;
-
+		width: 45px;
+		padding-bottom: 20px;
 	}
 
 	.card--img {
@@ -708,20 +917,13 @@
 		height: 200px;
 	}
 
-	.card__header {
-		background: none !important;
-		height: 120px;
-		text-align: center;
-		border: solid 1px white;
-		border-radius: 25px;
-		color: white;
-	}
+
 
 	.card__header__portabilidade {
 		color: #360063;
 		font-weight: 700;
 		background: var(--color-goldenrod);
-		z-index: 500;
+		margin: 10px 10px;
 
 	}
 
@@ -744,6 +946,8 @@
 		box-sizing: border-box;
 		color: var(--color-indigo);
 	}
+
+
 
 	.text-white {
 		color: var(--color-white);
@@ -790,17 +994,12 @@
 	.preco>span {
 		left: 0;
 		bottom: 0;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 
 
 
 
-	.btn:hover {
-
-		transform: scale(1.08);
-
-	}
 
 
 	/**/
@@ -812,9 +1011,6 @@
 	.card--img--portabilidade {
 		border-radius: 25px;
 	}
-
-
-
 
 
 	/*--------------------------------------------------------------
@@ -884,4 +1080,298 @@
 	.hello-footer-menu li:hover>a {
 		color: #bf4614;
 		font-weight: 600;
+	}
+
+	/* PÁGINA DE PLANOS*/
+
+	.form-box {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid var(--color-orangered-100);
+		border-radius: 15px;
+		background-color: #f1f1f1;
+		padding: 1em;
+	}
+
+	/*campo de progresso*/
+
+	.form-box .progresso {
+		position: relative;
+		padding: 1em;
+	}
+
+	.progresso .logo img {
+		max-width: 125px;
+	}
+
+
+
+	/*PASSOS DO PROGRESSO*/
+
+	.progresso ul.progresso-steps {
+		padding-top: 4em;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5em;
+	}
+
+	.progresso ul.progresso-steps li {
+		display: flex;
+		position: relative;
+		align-items: flex-start;
+		margin-bottom: 1.5em;
+	}
+
+	.progresso ul.progresso-steps li>span {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 0.5em;
+		border-radius: 50%;
+		background-color: #e23d19;
+		color: #F1f1f1;
+		font-weight: 600;
+	}
+
+	.progresso ul.progresso-steps li.active>span {
+		background-color: #360063;
+		border: 4px solid #a260d8;
+		z-index: 1;
+	}
+
+
+	/*CAMPO DE FORMULÁRIO*/
+
+	.form-box form {
+		width: 100%;
+		padding: 3em 1em;
+		background-color: white;
+		border-radius: 30px 30px 15px 15px;
+	}
+
+	form>div {
+		margin: 0 auto;
+	}
+
+	form>div h2 {
+		font-weight: 700;
+		font-size: 36px;
+	}
+
+	form>div h4 {
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 1.25em;
+	}
+
+	form :where(input, select) {
+		height: 35px;
+		padding: 0 0.75em;
+		border-radius: 7px;
+		outline-color: #bf4614;
+		border: 1px solid #ffe3d7;
+		background-color: transparent;
+	}
+
+	form label {
+		font-size: 12px;
+		margin-bottom: 0.5em;
+		font-weight: 700;
+	}
+
+	form .nome {
+		width: 200px;
+	}
+
+	form .sobrenome {
+		max-width: 350px;
+	}
+
+	form .genero {
+		max-width: 250px;
+	}
+
+	form .genero select,
+	option {
+		font-size: 14px;
+	}
+
+	form .email {
+		max-width: 250px;
+	}
+
+	form>div:not(.btn-group) {
+		display: none;
+	}
+
+	form>div.active {
+		display: block;
+	}
+
+
+	form>div p {
+		margin-bottom: 1.25em;
+	}
+
+	form>div>div {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1.25em;
+
+	}
+
+	/* BOTÕES */
+
+
+	.btn-group {
+		display: flex;
+		flex-direction: wrap;
+		gap: 1em;
+		margin-top: 1.75em;
+	}
+
+	.btn-group [class*="btn-"] {
+		background-color: #bf4614;
+		color: white;
+		padding: 0.75em 1.5em;
+		border: 3px solid #e9a88c;
+		font-weight: 200;
+		border-radius: 30px;
+		cursor: pointer;
+	}
+
+	.btn-group [class*="btn-"]:disabled {
+		background-color: #fdf2ee;
+		border-color: #fdf7f5;
+		color: #c5c5c5;
+		cursor: text;
+	}
+
+	.btn-group [class*="btn-"]:hover:not(:disabled) {
+		transition: 0.5s ease-out;
+		background-color: #360063;
+		border-color: #a260d8;
+	}
+
+	::placeholder {
+		color: #c5c5c5;
+		font-size: 12px;
+	}
+
+
+
+
+
+
+
+
+
+	.payment-choose {
+		padding-bottom: 20px;
+	}
+
+	.payment-choose label {
+
+		width: 100%;
+		height: 50px;
+		display: inline-block;
+		border-radius: 5px;
+		border: none;
+		background: transparent;
+		color: #0083d9;
+		border: solid 2px #0083d9;
+		text-transform: uppercase;
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+
+	}
+
+
+	.payment-choose label.active,
+	.payment-choose label:hover {
+
+		background: #04305d;
+		color: #fff;
+		border-color: #04305d;
+
+	}
+
+	.payment-choose label input {
+		margin-right: 5px;
+		margin-top: -5px;
+
+	}
+
+	.boleto {
+		display: none;
+	}
+
+	.boleto article {
+		padding: 30px;
+		border-radius: 10px;
+		background: #fff;
+	}
+
+	.boleto article svg {
+		font-size: 60px;
+		margin-bottom: 40px;
+	}
+
+	.pix {
+		display: none;
+	}
+
+	.pix article {
+		padding: 30px;
+		border-radius: 10px;
+		background: #fff;
+	}
+
+	.pix article svg {
+		font-size: 60px;
+		margin-bottom: 40px;
+	}
+
+
+	@media screen and (min-width: 768px) {
+		.form-box {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.form-box .progresso {
+			flex: 1 0 35%;
+			min-width: 300px;
+			padding: 1.5em;
+		}
+
+		.progresso ul.progresso-steps {
+			flex-direction: row;
+			gap: 0;
+		}
+
+		.progresso ul.progresso-steps li:not(:last-child)::before {
+			content: '';
+			position: absolute;
+			justify-content: center;
+			left: 10px;
+			top: 30px;
+			width: 2px;
+			height: 65px;
+			background-color: #f3c2ae;
+		}
+
+		.form-box form {
+			padding: 3em;
+			border-radius: 0 15px 15px 0;
+
+		}
+
+
 	}

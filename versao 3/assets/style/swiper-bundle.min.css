@@ -366,6 +366,7 @@
 }
 
 .swiper-pagination {
+    padding-top: 15px;
     position: absolute;
     text-align: center;
     transition: .3s opacity;
